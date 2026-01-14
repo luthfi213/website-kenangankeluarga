@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f5f5f5;
+}
+
+.container {
+    max-width: 400px;
+    margin: 60px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+h1 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.dekripsi {
+    font-size: 15px;
+    color: #666;
+    line-height: 1.6;
+}
+
+.album {
+    display: flex;
+    gap: 13px;
+    overflow-x: auto;
+    padding: 10px 0;
+}
+
+.album img {
+    width: 160px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    flex-shrink: 0;
+}
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.container {
+    animation: fadeUp 1s ease;
+}
+.pesan {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #555;
+    font-style: italic;
+}
+.album {
+    scroll-behavior: smooth;
+}
+.album img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}
